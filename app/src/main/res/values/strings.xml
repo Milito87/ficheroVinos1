@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FILE WINES</string>
+    <string name="add">ADD</string>
+    <string name="id">ID</string>
+    <string name="edit">EDIT</string>
+    <string name="delete">DELETE</string>
+    <string name="date">DATE</string>
+    <string name="grados">DEGREES</string>
+    <string name="origen">ORIGIN</string>
+    <string name="color">COLOUR</string>
+    <string name="bodega">CELLAR</string>
+    <string name="name">NAME</string>
+    <string name="vinos">wines</string>
+    <string name="example">example</string>
+</resources>

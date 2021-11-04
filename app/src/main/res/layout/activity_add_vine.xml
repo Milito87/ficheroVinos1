@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bodega"
+    tools:context=".AddWine">
+
+    <ImageView
+        android:id="@+id/iFondo2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="#80FFFFFF"
+        android:contentDescription="@string/vinos"
+        app:layout_constraintBottom_toTopOf="@+id/btAddWine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvIdAdd"
+        style="@style/labelStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="@string/id"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/iFondo2"
+        app:layout_constraintTop_toTopOf="@+id/iFondo2" />
+
+    <EditText
+        android:id="@+id/etIdAdd"
+        style="@style/etStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/example"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvIdAdd"
+        app:layout_constraintEnd_toEndOf="@+id/iFondo2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/tvNameAdd"
+        style="@style/labelStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="@string/name"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/iFondo2"
+        app:layout_constraintTop_toBottomOf="@+id/tvIdAdd" />
+
+    <EditText
+        android:id="@+id/etNameAdd"
+        style="@style/etStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/example"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvNameAdd"
+        app:layout_constraintEnd_toEndOf="@+id/iFondo2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/tvCellarAdd"
+        style="@style/labelStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="@string/bodega"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/iFondo2"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameAdd" />
+
+    <EditText
+        android:id="@+id/etCellarAdd"
+        style="@style/etStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/example"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvCellarAdd"
+        app:layout_constraintEnd_toEndOf="@+id/iFondo2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/tvColourAdd"
+        style="@style/labelStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="@string/color"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/iFondo2"
+        app:layout_constraintTop_toBottomOf="@+id/tvCellarAdd" />
+
+    <EditText
+        android:id="@+id/etColourAdd"
+        style="@style/etStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/example"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvColourAdd"
+        app:layout_constraintEnd_toEndOf="@+id/iFondo2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/tvOriginAdd"
+        style="@style/labelStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="@string/origen"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/iFondo2"
+        app:layout_constraintTop_toBottomOf="@+id/tvColourAdd" />
+
+    <EditText
+        android:id="@+id/etOriginAdd"
+        style="@style/etStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/example"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvOriginAdd"
+        app:layout_constraintEnd_toEndOf="@+id/iFondo2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/tvDegreesAdd"
+        style="@style/labelStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="@string/grados"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/iFondo2"
+        app:layout_constraintTop_toBottomOf="@+id/tvOriginAdd" />
+
+    <EditText
+        android:id="@+id/etDegreesAdd"
+        style="@style/etStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/example"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvDegreesAdd"
+        app:layout_constraintEnd_toEndOf="@+id/iFondo2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/tvDateAdd"
+        style="@style/labelStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="@string/date"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/iFondo2"
+        app:layout_constraintTop_toBottomOf="@+id/tvDegreesAdd" />
+
+    <EditText
+        android:id="@+id/etYearAdd"
+        style="@style/etStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/example"
+        android:importantForAutofill="no"
+        android:inputType="none|number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvDateAdd"
+        app:layout_constraintEnd_toEndOf="@+id/iFondo2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <Button
+        android:id="@+id/btAddWine"
+        style="@style/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iFondo2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
